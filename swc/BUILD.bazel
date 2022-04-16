@@ -29,7 +29,7 @@ bzl_library(
 write_file(
     name = "gen_main",
     out = "main.js",
-    content = ["require('@swc/cli')"],
+    content = ["import '@swc/cli'"],
 )
 
 nodejs_binary(
